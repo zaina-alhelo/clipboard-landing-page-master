@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Lexend+Deca:wght@100..900&family=Outfit&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+}
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  Font-size: 18px ;
+}
+.font {
+    color: var(--Grayish-Blue);
+    font-size: 12px;
+}
+h1 h2  h3 {
+    font-size: 30px;
+}
+header {
+      background: url(images/bg-header-desktop.png) no-repeat; 
+
+   background-position: center;
+  background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 4rem;
+}
+.main h1  , h2{
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: 1rem;
+
+}
+.but {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 20px;
+
+}
+.but :first-child {
+    background-color: var(--Strong-Cyan);
+    border-color: var(--Strong-Cyan);
+    border-radius: 20px;
+    color:white;
+    padding: 10px;
+    border: none;
+     box-shadow: 0 3px 15px hsl(171, 66%, 44%);
+}
+.but :nth-child(2) {
+    background-color: var(--Light-Blue);
+    /* border-color: var(--Strong-Cyan); */
+    border-radius: 20px;
+    color:white;
+    padding: 10px;
+    border: none;
+      box-shadow: 0 3px 15px hsl(233, 100%, 69%);
+}
+.pargraph {
+    margin-top: 8rem;
+}
+.computer {
+    display: flex;
+    gap: 50px;
+    margin-top: 5rem;
+}
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 5rem;
+}
+.items h3 {
+color: var(--Dark-Grayish-Blue);
+
+}
+.comp img{
+    margin: -30px;
+}
+.main2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 6rem;
+    text-align: center;
+}
+.main2 .item {
+margin-top: 6em;
+}
+.device img {
+    margin-top: 5rem;
+}
+.work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 5rem;
+    margin-bottom: 10em;
+}
+.work .black{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+.work .black svg {
+    align-self: center;
+}
+.logo {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5em;
+}
+footer {
+    margin-top: 5em;
+    background-color: hsl(201, 11%, 66% ,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 0px;
+}
+footer svg {
+    width: 200px;
+}
+.one {
+    display: flex;
+    gap: 50px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+}
+.two {
+    display: flex;
+    gap: 20px;
+}
+#edit {
+    margin: 200px 0;
+}
+@media  (max-width: 375px) {
+    body {
+         display: block;
+    }
+    button {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo {
+        display: flex;
+        flex-direction: column;
+    }
+}
